@@ -1,13 +1,73 @@
-<div
-  class="h-[100vh] bg-[rgba(51,51,69,0.8)] flex-grow text-white w-[85vw] relative"
->
-  <textarea
-    id="prompt-textarea"
-    tabindex="0"
-    data-id="root"
-    rows="1"
-    placeholder="Message ChatGPT…"
-    class="m-0 w-full resize-none border-0 bg-transparent py-[10px] pr-10 focus:ring-0 focus-visible:ring-0 dark:bg-transparent md:py-3.5 md:pr-12 placeholder-black/50 dark:placeholder-white/50 pl-3 md:pl-4"
-    style="max-height: 200px; height: 52px; overflow-y: hidden"
-  ></textarea>
+<div class="h-[100vh] bg-[#343541] flex-grow text-white w-[85vw] relative">
+  <div
+    class="h-5 w-1 bg-slate-600 rounded-sm absolute top-[50%] mx-2 hover:bg-slate-50"
+  ></div>
+
+  <div
+    class="absolute top-[13rem] w-full flex justify-center items-center flex-col"
+  >
+    <img
+      src="../../assets//logo.svg"
+      class="bg-white rounded-full p-3 mb-3 w-[72px] h-[72px]"
+    />
+    <h1 class="text-2xl font-medium">How can I help you today?</h1>
+  </div>
+  <div
+    class="w-full absolute bottom-[0.5rem] h-max flex justify-center items-center flex-col"
+  >
+    <div class="flex flex-wrap w-[50rem] gap-[1rem] justify-center mb-3">
+      <div
+        class="border p-3 text-sm border-solid border-gray-600 text-slate-300 w-[19rem] rounded-lg h-[3rem]"
+      >
+        Plan a trip
+      </div>
+      <div
+        class="border p-3 text-sm border-solid border-gray-600 text-slate-300 w-[19rem] rounded-lg h-[3rem]"
+      >
+        Plan a trip
+      </div>
+      <div
+        class="border p-3 text-sm border-solid border-gray-600 text-slate-300 w-[19rem] rounded-lg h-[3rem]"
+      >
+        Plan a trip
+      </div>
+      <div
+        class="border p-3 text-sm border-solid border-gray-600 text-slate-300 w-[19rem] rounded-lg h-[3rem]"
+      >
+        Plan a trip
+      </div>
+    </div>
+    <textarea
+      id="prompt-textarea"
+      tabindex="0"
+      data-id="root"
+      rows="1"
+      placeholder="Message ChatGPT…"
+      class="w-[40rem] mx-auto right-[30rem] bottom-10 resize-none border-solid border-gray-500 border bg-transparent py-[11px] px-[10px] rounded-[16px]"
+      style="max-height: 200px; height: 52px; overflow-y: hidden"
+    ></textarea>
+    <button
+      class="hover:bg-slate-100 rounded-md bg-gray-600 absolute right-[21.5rem] mb-5 bottom-[1rem]"
+    >
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="#000"
+        class="text-white dark:text-black hover:text-black"
+      >
+        <path
+          d="M7 11L12 6L17 11M12 18V7"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </svg>
+    </button>
+
+    <p class="text-[10px] mt-2">
+      ChatGPT can make mistakes. Consider checking important information.
+    </p>
+  </div>
 </div>
